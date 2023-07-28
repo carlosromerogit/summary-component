@@ -1,0 +1,75 @@
+:root {
+  --bs-body-font-family: "Hanken Grotesk", sans-serif;
+  --card-width: 540px;
+  --letter-spa: 0.2px;
+}
+
+//Background gradients
+.gradient-blue {
+  background: rgb(46, 43, 233);
+  background: -moz-linear-gradient(
+    3deg,
+    rgba(46, 43, 233, 1) 0%,
+    rgba(120, 87, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    3deg,
+    rgba(46, 43, 233, 1) 0%,
+    rgba(120, 87, 255, 1) 100%
+  );
+  background: linear-gradient(
+    3deg,
+    rgba(46, 43, 233, 1) 0%,
+    rgba(120, 87, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2e2be9",endColorstr="#7857ff",GradientType=1);
+}
+.gradient-pale-transparent {
+  background: rgb(78, 33, 202);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(78, 33, 202, 0) 0%,
+    rgba(78, 33, 202, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(78, 33, 202, 0) 0%,
+    rgba(78, 33, 202, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(78, 33, 202, 0) 0%,
+    rgba(78, 33, 202, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4e21ca",endColorstr="#4e21ca",GradientType=1);
+}
+
+//Letter spacing
+.letter-spa {
+  letter-spacing: var(--letter-spa);
+}
+
+//Miscellaneous
+.card-width {
+  max-width: var(--card-width);
+}
+.btn-dark-gray-blue:hover {
+  border: 1px solid transparent;
+  background: rgb(46, 43, 233);
+  background: -moz-linear-gradient(
+    3deg,
+    rgba(46, 43, 233, 1) 0%,
+    rgba(120, 87, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    3deg,
+    rgba(46, 43, 233, 1) 0%,
+    rgba(120, 87, 255, 1) 100%
+  );
+  background: linear-gradient(
+    3deg,
+    rgba(46, 43, 233, 1) 0%,
+    rgba(120, 87, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2e2be9",endColorstr="#7857ff",GradientType=1);
+}

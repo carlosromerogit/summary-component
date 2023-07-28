@@ -1,0 +1,117 @@
+//Custom colors for theme-colors map
+$light-red: hsl(0, 100%, 67%);
+$orangey-yellow: hsl(39, 100%, 56%);
+$green-teal: hsl(166, 100%, 37%);
+$cobal-blue: hsl(234, 85%, 45%);
+
+$custom-theme: (
+  "light-red": $light-red,
+  "orangey-yellow": $orangey-yellow,
+  "green-teal": $green-teal,
+  "cobal-blue": $cobal-blue,
+);
+
+@each $color, $value in $custom-theme {
+  .text-#{$color} {
+    color: $value;
+  }
+  .bg-#{$color} {
+    background-color: $value;
+  }
+}
+
+//Custom colors for colors map
+$white-prime: hsl(0, 0%, 100%);
+$pale-blue: hsl(221, 100%, 96%);
+$light-lavender: hsl(241, 100%, 89%);
+$dark-gray-blue: hsl(224, 30%, 27%);
+
+$custom-colors: (
+  "white-prime": $white-prime,
+  "pale-blue": $pale-blue,
+  "light-lavender": $light-lavender,
+  "dark-gray-blue": $dark-gray-blue,
+);
+
+@each $color, $value in $custom-colors {
+  .text-#{$color} {
+    color: $value;
+  }
+}
+
+// For background
+$slate-blue: #7857ff;
+$royal-blue: #2e2be9;
+$violet-blue: #534f5e;
+$persian-blue: hsla(241, 72%, 46%, 0);
+
+$custom-bg: (
+  "slate-blue": $slate-blue,
+  "royal-blue": $royal-blue,
+  "violet-blue": $violet-blue,
+  "persian-blue": $persian-blue,
+);
+
+@each $color, $value in $custom-bg {
+  .bg-#{$color} {
+    background-color: $value;
+  }
+}
+
+// Light versions
+$light-reds: (
+  "light-red-100": tint-color($light-red, 90%),
+  "light-red-200": tint-color($light-red, 70%),
+  "light-red-300": tint-color($light-red, 50%),
+  "light-red-400": tint-color($light-red, 30%),
+);
+@each $color, $value in $light-reds {
+  .bg-#{$color} {
+    background-color: $value;
+  }
+  .text-#{$color} {
+    color: $value;
+  }
+}
+$light-orangey-yellows: (
+  "orangey-yellow-100": tint-color($orangey-yellow, 90%),
+  "orangey-yellow-200": tint-color($orangey-yellow, 70%),
+  "orangey-yellow-300": tint-color($orangey-yellow, 50%),
+  "orangey-yellow-400": tint-color($orangey-yellow, 30%),
+);
+@each $color, $value in $light-orangey-yellows {
+  .bg-#{$color} {
+    background-color: $value;
+  }
+  .text-#{$color} {
+    color: $value;
+  }
+}
+$light-green-teals: (
+  "green-teal-100": tint-color($green-teal, 90%),
+  "green-teal-200": tint-color($green-teal, 70%),
+  "green-teal-300": tint-color($green-teal, 50%),
+  "green-teal-400": tint-color($green-teal, 30%),
+);
+@each $color, $value in $light-green-teals {
+  .bg-#{$color} {
+    background-color: $value;
+  }
+  .text-#{$color} {
+    color: $value;
+  }
+}
+$light-cobal-blues: (
+  "cobal-blue-100": tint-color($cobal-blue, 90%),
+  "cobal-blue-200": tint-color($cobal-blue, 70%),
+  "cobal-blue-300": tint-color($cobal-blue, 50%),
+  "cobal-blue-400": tint-color($cobal-blue, 30%),
+);
+@each $color, $value in $light-cobal-blues {
+  .bg-#{$color} {
+    background-color: $value;
+  }
+  .text-#{$color} {
+    color: $value;
+  }
+}

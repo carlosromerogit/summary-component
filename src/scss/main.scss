@@ -1,0 +1,30 @@
+// Functions first
+@import "../../node_modules/bootstrap/scss/functions";
+
+// Variable overrides second
+@import "../scss/abstract/custom-variables";
+
+// Required Bootstrap imports
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/root";
+
+// Amends
+@import "../scss/abstract/maps-amend";
+@import "../scss/abstract/utilities-amend";
+
+// API to enable resposive
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+// Import Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Font Family
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+// CSS Variables
+@import "../scss/abstract/css-variable";
+@import "./abstract/media-queries";
